@@ -1,18 +1,27 @@
-# L6_L7_47 — Fuel Station
+# Lab 6 — Code and Branch Coverage
 
-Lab 6: Code and Branch Coverage
+**Student:** Yashas  
+**SRN:** PES2UG24CS609
 
-## About
+The supplied fuel station application is tested with separate line and branch suites, using the required `CodeCoverageTest_...` and `BranchCoverageTest_...` file naming pattern.
 
-A small Python module that works out fuel bills by grade, litres and loyalty tier, checks whether a pump request is allowed and reports pump session status.
+## Run
 
-## Files
+Install `coverage` and `pytest`, then from this folder run:
 
-| File | Description |
-|------|-------------|
-| `fuel_station.py` | The module under test |
-| `test_fuel_station.py` | Starter test file |
+```sh
+coverage erase
+coverage run --source=fuel_station -m pytest CodeCoverageTest_PES2UG24CS609_fuel_station.py
+coverage report -m
+coverage erase
+coverage run --branch --source=fuel_station -m pytest BranchCoverageTest_PES2UG24CS609_fuel_station.py
+coverage report -m
+```
 
-Keep all your Lab 6 work in this `LAB6` folder. Lab 7 will be added to this repo later.
+## Results
 
-Refer to the lab handout for instructions.
+- Line coverage: 100% (18 tests passed).
+- Branch coverage: 100% (22 tests passed; 26 of 26 branch paths covered).
+- `CodeCoverageResults.txt` and `BranchCoverageResults.txt` contain the final terminal output transcripts.
+
+The handout also requests terminal screenshots for both runs; the attached files are text transcripts rather than screenshots.
