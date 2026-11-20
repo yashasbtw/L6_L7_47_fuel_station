@@ -1,0 +1,9 @@
+==== Running parse_purchase ====
+Enter grade:litres (e.g. diesel:25): Result: ('Diesel', 25.0)
+
+==== Running volume_average ====
+Enter pump volumes as CSV (e.g. 10,25,40): Result: 25
+
+==== Running payable_bill ====
+Enter bill|discount (e.g. 2500|100): Result: 2850.0
+
